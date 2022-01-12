@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:elevation="10dp"
+    android:translationZ="6dp"
+    android:layout_margin="5dp">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/txt_quiz_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DATE"
+            android:padding="3dp"
+            android:fontFamily="@font/hvd"
+            android:textSize="15sp"
+            android:layout_gravity="start"/>
+
+        <TextView
+            android:id="@+id/txt_quiz_subject_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz Subject Name"
+            android:textSize="25sp"
+            android:fontFamily="@font/hvd"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_quiz_teacher_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teacher Name"
+            android:textSize="20sp"
+            android:fontFamily="@font/hvd"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

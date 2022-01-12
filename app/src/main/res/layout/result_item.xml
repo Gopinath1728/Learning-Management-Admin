@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:layout_margin="3dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true">
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progress_result"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:indicatorSize="80dp"
+                app:indicatorDirectionCircular="clockwise"
+                app:indicatorInset="4dp"
+                app:trackCornerRadius="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:progress="60"
+                />
+
+            <TextView
+                android:id="@+id/text_result_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                app:layout_constraintBottom_toBottomOf="@+id/progress_result"
+                app:layout_constraintEnd_toEndOf="@+id/progress_result"
+                app:layout_constraintStart_toStartOf="@+id/progress_result"
+                app:layout_constraintTop_toTopOf="@+id/progress_result"
+                tools:text="60%" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txt_result_exam_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exam Type"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hvd"
+                android:textSize="18sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:id="@+id/txt_result_subject_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Subject Name"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hvd"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marks Obtained: "
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/hvd"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/txt_marks_obtained"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/hvd"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Marks: "
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/hvd"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/txt_total_marks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/hvd"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

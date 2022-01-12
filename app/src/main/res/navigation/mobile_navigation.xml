@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.sampleschooladmin.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_view_teachers"
+        android:name="com.example.sampleschooladmin.ui.view_teachers.ViewTeacherFragment"
+        android:label="@string/menu_view_teachers"
+        tools:layout="@layout/fragment_view_teacher" />
+
+    <fragment
+        android:id="@+id/nav_view_classes"
+        android:name="com.example.sampleschooladmin.ui.view_classes.ViewClassesFragment"
+        android:label="@string/menu_view_classes"
+        tools:layout="@layout/fragment_view_classes" />
+
+    <fragment
+        android:id="@+id/nav_view_class_data"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.ViewClassDataFragment"
+        android:label="@string/menu_view_classes"
+        tools:layout="@layout/fragment_view_class_data"/>
+
+    <fragment
+        android:id="@+id/nav_view_class_subjects"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.view_class_subjects.ViewClassSubjectsFragment"
+        android:label="@string/menu_view_subjects"
+        tools:layout="@layout/fragment_view_class_subjects"/>
+
+    <fragment
+        android:id="@+id/nav_view_class_timetable"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.view_class_timetable.ViewClassTimetableFragment"
+        android:label="@string/menu_view_timetable"
+        tools:layout="@layout/fragment_view_class_timetable"/>
+
+    <fragment
+        android:id="@+id/nav_drive_fragment"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.view_class_subjects.DriveFragment"
+        android:label="@string/menu_view_subjects"
+        tools:layout="@layout/fragment_drive"/>
+
+    <fragment
+        android:id="@+id/nav_time_fragment"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.view_class_timetable.view_time.TimeFragment"
+        android:label="@string/menu_view_timetable"
+        tools:layout="@layout/fragment_time"/>
+
+    <fragment
+        android:id="@+id/nav_class_students"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.view_class_students.StudentsFragment"
+        android:label="@string/menu_view_students"
+        tools:layout="@layout/fragment_students"/>
+
+    <fragment
+        android:id="@+id/nav_view_student_data"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.view_class_students.view_student_data.ViewStudentDataFragment"
+        android:label="@string/menu_view_students"
+        tools:layout="@layout/fragment_view_student_data"/>
+
+    <fragment
+        android:id="@+id/nav_teacher_data"
+        android:name="com.example.sampleschooladmin.ui.view_teachers.TeacherProfileFragment"
+        android:label="@string/menu_view_teachers"
+        tools:layout="@layout/fragment_teacher_profile"/>
+
+    <fragment
+        android:id="@+id/nav_announcement_detail"
+        android:name="com.example.sampleschooladmin.ui.announcement.AnnouncementDetailFragment"
+        android:label="@string/menu_announcement"
+        tools:layout="@layout/fragment_announcement_detail"/>
+
+    <fragment
+        android:id="@+id/nav_announcement"
+        android:name="com.example.sampleschooladmin.ui.announcement.AnnouncementFragment"
+        android:label="@string/menu_announcement"
+        tools:layout="@layout/fragment_announcement"/>
+
+    <fragment
+        android:id="@+id/nav_assignment"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.view_class_assignments.AssignmentsFragment"
+        android:label="@string/menu_view_assignments"
+        tools:layout="@layout/assignments_fragment"/>
+
+    <fragment
+        android:id="@+id/nav_quiz"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.view_class_quiz.QuizFragment"
+        android:label="@string/menu_quiz"
+        tools:layout="@layout/fragment_quiz"/>
+
+    <fragment
+        android:id="@+id/nav_add_quiz"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.view_class_quiz.AddQuizFragment"
+        android:label="@string/menu_add_quiz"
+        tools:layout="@layout/fragment_add_quiz"/>
+
+    <fragment
+        android:id="@+id/nav_examinations"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.view_class_exams.ClassExamsFragment"
+        android:label="@string/menu_view_exams"
+        tools:layout="@layout/fragment_class_exams"/>
+
+    <fragment
+        android:id="@+id/nav_attendance"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.view_class_students.view_student_data.student_attendance.StudentAttendanceFragment"
+        android:label="@string/menu_view_attendance"
+        tools:layout="@layout/fragment_student_attendance"/>
+
+    <fragment
+        android:id="@+id/nav_attendance_detail"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.view_class_students.view_student_data.student_attendance.StudentAttendanceDetailFragment"
+        android:label="@string/menu_view_attendance"
+        tools:layout="@layout/fragment_student_attendance_detail"/>
+
+    <fragment
+        android:id="@+id/nav_student_result"
+        android:name="com.example.sampleschooladmin.ui.view_classes.view_class_data.view_class_students.view_student_data.student_results.StudentResultsFragment"
+        android:label="@string/menu_view_results"
+        tools:layout="@layout/fragment_student_results"/>
+</navigation>

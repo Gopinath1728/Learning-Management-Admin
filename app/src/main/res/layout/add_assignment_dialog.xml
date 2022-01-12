@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edt_assi_subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Subject Name"
+            android:textSize="25sp"
+            android:fontFamily="@font/hvd"
+            android:textColor="@color/black"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/txt_assi_teacher_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Teacher Name"
+            android:textSize="20sp"
+            android:fontFamily="@font/hvd"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Topic:"
+                android:textAlignment="center"
+                android:textSize="23sp"
+                android:fontFamily="@font/hvd"
+                android:textColor="@color/black"/>
+
+            <EditText
+                android:id="@+id/edt_assi_topic_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Topic Name"
+                android:textAlignment="center"
+                android:textSize="23sp"
+                android:fontFamily="@font/hvd"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Description:"
+            android:textSize="20sp"
+            android:fontFamily="@font/hvd"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/edt_assi_body"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Description"
+            android:fontFamily="@font/hvd"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_assi_cancel"
+                android:layout_width="0dp"
+                android:layout_margin="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:fontFamily="@font/hvd"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:backgroundTint="@color/red"/>
+            <Button
+                android:id="@+id/btn_assi_add"
+                android:layout_width="0dp"
+                android:layout_margin="2dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Add"
+                android:fontFamily="@font/hvd"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:backgroundTint="@color/green"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

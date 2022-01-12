@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="8dp"
+    android:layout_margin="3dp"
+    android:elevation="5dp"
+    android:translationZ="5dp"
+    app:cardCornerRadius="7dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="3dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Message"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/hvd"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/edt_message_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Title"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/hvd"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/edt_message_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Message"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/hvd"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/edt_message_from"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="From"
+            android:text="Administrator"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:fontFamily="@font/hvd" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_message_cancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="CANCEL"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/red"
+                android:fontFamily="@font/hvd"
+                style="?android:attr/buttonBarButtonStyle" />
+
+            <Button
+                android:id="@+id/btn_message_send"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="SEND"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/green"
+                android:fontFamily="@font/hvd"
+                style="?android:attr/buttonBarButtonStyle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
