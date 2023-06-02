@@ -19,9 +19,6 @@ This application is designed to suit the management of an educational institute.
 6. Send Message to Students and Teachers.
 7. Online Class in Jitsi Meet (Yet to include)
 
-## Sample
-
-https://user-images.githubusercontent.com/49778072/149353909-81753da5-798d-4634-ad22-edb487a5648c.mp4
 
 ## External Libraries used:
 1. Firebase
